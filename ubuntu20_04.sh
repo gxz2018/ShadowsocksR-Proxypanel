@@ -122,9 +122,9 @@ ip_landing_init(){
 #=================================================================#
 
 libsodium_file="libsodium-1.0.18"
-libsodium_url="http://eltty.elttycn.com/libsodium-1.0.18.tar.gz"
+libsodium_url="https://raw.githubusercontent.com/gxz2018/ShadowsocksR-Proxypanel/refs/heads/master/libsodium-1.0.18.tar.gz"
 shadowsocks_r_file="shadowsocksr-3.2.2"
-shadowsocks_r_url="http://eltty.elttycn.com/3.2.2.tar.gz"
+shadowsocks_r_url="https://raw.githubusercontent.com/gxz2018/ShadowsocksR-Proxypanel/refs/heads/master/3.2.2.tar.gz"
 
 cur_dir=`pwd`
 
